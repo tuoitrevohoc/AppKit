@@ -10,6 +10,7 @@ import SwiftUI
 
 struct AppView: View {
     
+    /// the applications
     let applications: [Application]
     
     /// The body
@@ -20,11 +21,12 @@ struct AppView: View {
                     Image(systemName: "house")
                     Text("Home")
                 }
+                .tag(1)
             Text("Message")
                 .tabItem {
                     Image(systemName: "message")
-                    Text("Home")
-                }
+                    Text("Message")
+                }.tag(2)
         }
     }
 }
