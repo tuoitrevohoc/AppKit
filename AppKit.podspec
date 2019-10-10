@@ -18,6 +18,7 @@ Pod::Spec.new do |spec|
 
   spec.platform     = :ios, "13.1"
 
-  spec.source       = { :git => "https://github.com/tuoitrevohoc/AppKit.git", :tag => "0.0.1" }
-  spec.source_files  = "AppKit", "Classes/**/*.{h,m,swift}"
+  spec.source       = { :git => "https://github.com/tuoitrevohoc/AppKit.git", :tag => "0.0.2" }
+  spec.source_files  = "AppKit", "AppKit/**/*.{h,m,swift}"
+  spec.swift_version = "5.0"
 end
