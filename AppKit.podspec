@@ -12,13 +12,12 @@ Pod::Spec.new do |spec|
   spec.version      = "0.0.1"
   spec.summary      = "The framework to create super app"
   spec.homepage     = "https://github.com/tuoitrevohoc/AppKit"
-  spec.license      = "MIT (example)"
+  spec.license      = "MIT"
 
   spec.author             = { "Tran Thien Khiem" => "tuoitrevohoc@me.com" }
 
-  spec.platform     = :ios
-  spec.platform     = :ios, "13.0"
+  spec.platform     = :ios, "13.1"
 
-  spec.source       = { :git => "https://github.com/tuoitrevohoc/AppKit.git", :commit => "f4929a45cb41d182574cf9e3d5ccafebc38ede5d" }
+  spec.source       = { :git => "https://github.com/tuoitrevohoc/AppKit.git", :tag => "0.0.1" }
   spec.source_files  = "AppKit", "Classes/**/*.{h,m,swift}"
 end
