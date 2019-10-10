@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "AppKit"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "The framework to create super app"
   spec.homepage     = "https://github.com/tuoitrevohoc/AppKit"
   spec.license      = "MIT"
