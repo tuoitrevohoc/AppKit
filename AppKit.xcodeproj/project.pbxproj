@@ -28,6 +28,7 @@
 		36CFAC7F234EE2C400B3FC3F /* AppKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 36455B1D234D84F400012935 /* AppKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		36CFAC84234EEB6600B3FC3F /* AppKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 36CFAC83234EEB6600B3FC3F /* AppKit.podspec */; };
 		36CFAC88234EF08E00B3FC3F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 36CFAC87234EF08E00B3FC3F /* LICENSE */; };
+		36CFAEF22351B52F00B3FC3F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CFAEF12351B52F00B3FC3F /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		36CFAC7A234EE28B00B3FC3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36CFAC83234EEB6600B3FC3F /* AppKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AppKit.podspec; sourceTree = "<group>"; };
 		36CFAC87234EF08E00B3FC3F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		36CFAEF12351B52F00B3FC3F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				36455B3E234D888F00012935 /* HomeView.swift */,
 				36455B47234D8C1E00012935 /* AppList.swift */,
 				36CFAC45234EDEDD00B3FC3F /* AppView.swift */,
+				36CFAEF12351B52F00B3FC3F /* ProfileView.swift */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36455B46234D8AE800012935 /* Application.swift in Sources */,
+				36CFAEF22351B52F00B3FC3F /* ProfileView.swift in Sources */,
 				36455B3F234D888F00012935 /* HomeView.swift in Sources */,
 				36455B48234D8C1E00012935 /* AppList.swift in Sources */,
 				36455B42234D89EB00012935 /* AppContext.swift in Sources */,
