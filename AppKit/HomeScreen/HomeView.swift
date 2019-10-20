@@ -16,11 +16,21 @@ struct HomeView: View {
     /// The body
     var body: some View {
         NavigationView {
-            VStack {
-                AppList(applications: applications)
-                Spacer()
+            ZStack {
+                Color(#colorLiteral(red: 0.9803921569, green: 0.9803921569, blue: 0.9803921569, alpha: 1))
+                    .edgesIgnoringSafeArea(.all)
+                ScrollView {
+                    HStack {
+                        Spacer()
+                        Image(systemName: "person.crop.circle")
+                    }
+                    .padding()
+                    AppList(applications: applications)
+                    Spacer()
+                }
+                .edgesIgnoringSafeArea(.top)
             }
-            .navigationBarTitle("Home Page")
+            .navigationBarHidden(true)
         }
     }
 }

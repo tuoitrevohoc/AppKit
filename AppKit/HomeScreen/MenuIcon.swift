@@ -21,15 +21,16 @@ struct MenuIcon: View {
     /// the body
     var body: some View {
         VStack {
-            icon.frame(width: 64.0, height: 64.0, alignment: .center)
+            icon.frame(width: 80.0, height: 80.0, alignment: .center)
                 .scaledToFill()
                 .background(
-                    RoundedRectangle(cornerRadius: 5.0)
-                        .foregroundColor(Color.white)
-                        .shadow(radius: 1.0)
+                    RoundedRectangle(cornerRadius: 10.0)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .shadow(color: Color.black.opacity(0.05), radius: 10.0, x: 0.0, y: 3.0)
                 )
             Text(title).bold()
                 .font(Font.caption)
+                .foregroundColor(Color.black.opacity(0.7))
         }
     }
 }

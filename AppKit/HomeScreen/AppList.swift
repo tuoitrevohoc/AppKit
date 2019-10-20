@@ -20,17 +20,18 @@ struct AppList: View {
             HStack {
                 Text("Applications")
                     .bold()
-                    .font(Font.headline)
+                    .font(Font.largeTitle)
+                    .foregroundColor(Color.black.opacity(0.5))
                 Spacer()
                 NavigationLink(destination:
                     Text("All applications")
                         .navigationBarTitle("All applications", displayMode: .inline)
                 ) {
                     Text("More")
+                        .foregroundColor(Color.black.opacity(0.6))
                     Image(systemName: "ellipsis")
                 }
             }
-                .padding(.bottom)
             HStack (alignment: .top, spacing: 20.0) {
                 ForEach(applications, id: \.title) { application in
                     NavigationLink(destination: application.render(nil)) {

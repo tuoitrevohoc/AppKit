@@ -15,18 +15,23 @@ struct AppView: View {
     
     /// The body
     var body: some View {
-        TabView {
-            HomeView(applications: applications)
-                .tabItem {
-                    Image(systemName: "house")
-                    Text("Home")
-                }
-                .tag(1)
-            Text("Message")
-                .tabItem {
-                    Image(systemName: "message")
-                    Text("Message")
-                }.tag(2)
+        ZStack {
+            Color(#colorLiteral(red: 0.7843137255, green: 0.7843137255, blue: 0.7843137255, alpha: 1))
+                .edgesIgnoringSafeArea(.all)
+            TabView {
+                HomeView(applications: applications)
+                    .tabItem {
+                        Image(systemName: "house")
+                        Text("Home")
+                    }
+                    .tag(1)
+                Text("Message")
+                    .tabItem {
+                        Image(systemName: "message")
+                        Text("Message")
+                    }
+                    .tag(2)
+            }
         }
     }
 }
